@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h3>Rock Paper Scissor Game</h3>
+        <div class="button_container">
+            <button data-selection="r" onclick="selectOption(this);">🤘🏻</button>
+            <button data-selection="p" onclick="selectOption(this);">📰</button>
+            <button data-selection="s" onclick="selectOption(this);">✂</button>
+        </div>
+        <div class="play_container">
+            <div id="human_selection"></div>
+            <div id="computer_selection"></div>
+        </div>
+        <h3 id="result"></h3>
+        <p>
+            Computer has won <span id="computer_score"></span> rounds.
+            <br />
+            Human has won <span id="human_score"></span> rounds.
+        </p>
+    </div>
+
+</body>
+
+<script src="index.js"></script>
+
+</html>
